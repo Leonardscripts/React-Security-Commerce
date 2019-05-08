@@ -1,6 +1,6 @@
 :root {
-  --mainBlue: #2a2a72;
-  --lightblue: #009ffd;
+  --mainBlue: #262696;
+  --lightblue: #1e70a0;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainYellow: #ffa400;
@@ -8,7 +8,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif !important;
-  background: var(--mainWhite) !important;
+  background: var(--lightBlue) !important;
   color: var(--mainDARK) !important;
 }
 .text-title {
