@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import styled from "styled-components";
+import { ButtonContainer } from "./Button";
 
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-warning navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm bg-warning navbar-dark px-sm-5">
         {/*
         https://www.iconfinder.com/icons/2538691/camera_cctv_record_security_icon
         Creative Commons (Attribution 3.0 Unported);
@@ -34,19 +35,22 @@ export default class Navbar extends Component {
             My Cart
           </ButtonContainer>
         </Link>
-      </nav>
+      </NavWrapper>
     );
   }
 }
-const ButtonContainer = styled.button`
-  text-transform: capitalize;
-  font-size: 1.4 rem;
-  background: transparent;
-  border: 0.2rem solid var(--mainWhite);
-  border-radius: 60px;
-  color: var(--lightBlue);
-  padding: 0.2rem 0.5rem;
-  cursor: pointer;
-  margin: 0.2rem 0.5rem 0.2rem 0;
-  transition: all 0.5 ease-in-out;
+
+const NavWrapper = styled.nav`
+  background: var(--mainWhite);
+  .nav-link {
+    color: var(--lightBlue) !important;
+    font-size: 1.3rem;
+    text-transform: capitalize !important;
+    border: 0.2rem solid var(--mainWhite);
+    border-radius: 60px;
+    transition: all 0.5 ease-in-out;
+    &:hover {
+      background: var(--mainDark);
+    }
+  }
 `;
