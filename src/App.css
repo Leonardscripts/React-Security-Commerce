@@ -19,3 +19,6 @@ body {
 .text-blue {
   color: var(--mainBlue);
 }
+.text-bright {
+  color: var(--mainYellow);
+}

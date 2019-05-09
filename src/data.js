@@ -1,8 +1,3 @@
-/*
-https://www.iconfinder.com/icons/2538691/camera_cctv_record_security_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/Makoto_msk */
-
 export const storeProducts = [
   {
     id: 1,
