@@ -44,7 +44,7 @@ const NavWrapper = styled.nav`
   background: var(--mainWhite);
   .nav-link {
     color: var(--lightBlue) !important;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: capitalize !important;
     border: 0.2rem solid var(--mainWhite);
     border-radius: 60px;
