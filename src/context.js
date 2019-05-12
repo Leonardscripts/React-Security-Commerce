@@ -1,19 +1,57 @@
 import React, { Component } from "react";
-import { StoreProducts, detailProduct, storeProducts } from "./data";
+import { storeProducts, detailProduct } from "./data";
 const ProductContext = React.createContext();
 // Provider
 // Consumer
 
 class ProductProvider extends Component {
   state = {
-    products: storeProducts,
+    products: [],
     detailProduct: detailProduct
+    cart: [],
+    modalOPen:true,
   };
-  handleDetail = () => {
-    console.log("hello from detail");
+  componentDidMount() {
+    this.setProducts();
+  }
+  setProducts = () => {
+    let tempProducts = [];
+    storeProducts.forEach(item => {
+      const singleItem = { ...item };
+      tempProducts = [...tempProducts, singleItem];
+    });
+    this.setState(() => {
+      return { products: tempProducts };
+    });
   };
-  addToCart = () => {
-    console.log("hello from add to cart");
+
+  getItem = id => {
+    const product = this.state.products.find(item.id === id);
+    return product;
+  };
+
+  handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState(() => {
+      return { detailProduct: product };
+    });
+  };
+  addToCart = id => {
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.getItem(id));
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+    this.setState(
+      () => {
+        return { products: tempProducts, cart: [...this.state.cart, product] };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
   render() {
     return (
