@@ -9,6 +9,7 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Modal from " ./components/Modal";
+
 class App extends Component {
   render() {
     return (
@@ -16,7 +17,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={ProductList} />
-          <Route path="/details" component={Details} />
+          <Route path="/Details" component={Details} />
           <Route path="/Cart" component={Cart} />
           <Route component={Default} />
         </Switch>
