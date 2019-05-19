@@ -24,7 +24,7 @@ export default class Modal extends Component {
                   className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                 />
                 <h5> item added to the cart </h5>
-                <img src={img} className="img-fluid" alt="product" />
+                <img src={img} className="img-fluid mx-auto" alt="product" />
                 <h5>{title}</h5>
                 <h5 className="text-muted">price : $ {price} </h5>
                 <Link to="/">
