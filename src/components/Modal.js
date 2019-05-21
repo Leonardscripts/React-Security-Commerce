@@ -21,7 +21,7 @@ export default class Modal extends Component {
                   <div className="row">
                     <div
                       id="modal"
-                      className="col-8 mx-auto col-md-6 col-lg-10 text-center text-capitalize p-5"
+                      className="col-8 mx-auto col-md-6 col-lg-5 text-center text-capitalize p-5"
                     >
                       <h5> Added to Cart </h5>
                       <img src={img} className="img-fluid" alt="product" />
@@ -56,10 +56,10 @@ const ModalContainer = styled.div`
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0.1, 0.8);
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  # modal {
+  #modal {
     background: var(--mainWhite);
   }
 `;
