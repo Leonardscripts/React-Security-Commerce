@@ -1,8 +1,8 @@
 :root {
-  --mainBlue: #96bcd3;
+  --mainBlue: #75abcc;
   --lightBlue: #096ba3;
   --mainWhite: #f3f3f3;
-  --mainDark: #1f4980;
+  --mainDark: #7b96bb;
   --mainYellow: #ffa400;
 }
 
@@ -20,7 +20,7 @@ body {
   color: var(--mainBlue);
 }
 .text-bright {
-  color: var(--mainBlue);
+  color: var(--mainWhite);
 }
 
 .btn-block {
