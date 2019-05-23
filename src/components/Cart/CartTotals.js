@@ -9,7 +9,7 @@ export default function CartTotals({ value }) {
           <div ClassName="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
             <Link to="/">
               <button
-                className="btn bg-success btn-outline-warning text-uppercase mb-3 px-5"
+                className="btn bg-warning btn-outline-success text-uppercase mb-3 px-5"
                 type="button"
                 onClick={() => clearCart()}
               >
@@ -17,15 +17,15 @@ export default function CartTotals({ value }) {
               </button>
             </Link>
             <h5>
-              <span className="text-title">Subtotal :</span>
+              <span className="text-title">SSubtotal :</span>
               <strong>$ {cartSubTotal}</strong>
             </h5>
             <h5>
-              <span className="text-title">Tax :</span>
+              <span className="text-title">TTax :</span>
               <strong>$ {cartTax}</strong>
             </h5>
             <h5>
-              <span className="text-title">Total :</span>
+              <span className="text-title">TTotal :</span>
               <strong>$ {cartTotal}</strong>
             </h5>
           </div>

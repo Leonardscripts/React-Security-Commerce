@@ -20,18 +20,18 @@ export default class Navbar extends Component {
           />
         </Link>
         <ul className="navbar-nav align-items-center">
-          <li class="nav-item ml-5">
+          <li class="nav-item ml-6">
             <Link to="/" className="nav-link">
-              products
+              PRODUCTS
             </Link>
           </li>
         </ul>
         <Link to="/cart" className="ml-auto">
           <ButtonContainer>
             <span className="mr-2">
-              <i className="fas fa-cart-plus" />
+              <i className="fas fa-cart-plus fa-2x" />
             </span>
-            My Cart
+            MY CART
           </ButtonContainer>
         </Link>
       </NavWrapper>
