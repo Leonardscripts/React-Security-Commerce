@@ -6,7 +6,7 @@ import { ButtonContainer } from "./Button";
 export default class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm bg-warning navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm bg-secondary navbar-dark px-sm-5">
         {/*
         https://www.iconfinder.com/icons/2538691/camera_cctv_record_security_icon
         Creative Commons (Attribution 3.0 Unported);
